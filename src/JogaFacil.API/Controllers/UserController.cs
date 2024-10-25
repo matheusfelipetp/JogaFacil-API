@@ -34,7 +34,6 @@ namespace JogaFacil.API.Controllers
             if (response is null)
                 return NoContent();
             
-
             return Ok(response);
         }
     }
