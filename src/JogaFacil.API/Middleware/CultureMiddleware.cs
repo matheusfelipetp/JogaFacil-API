@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
 
-namespace JogaFacil.Api.Middleware
+namespace JogaFacil.API.Middleware
 {
     public class CultureMiddleware
     {

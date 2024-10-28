@@ -1,9 +1,10 @@
-﻿using JogaFacil.Comunication.Requests.Users;
-
-namespace JogaFacil.Comunication.Responses
+﻿namespace JogaFacil.Comunication.Responses
 {
     public class ResponseUserJson
     {
-        public List<ResponseShortUserJson> Users { get; set; } = [];
+        public Guid Id { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+        public string Role { get; set; } = string.Empty;
     }
 }

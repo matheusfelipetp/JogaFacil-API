@@ -1,5 +1,5 @@
 using JogaFacil.Api.Filters;
-using JogaFacil.Api.Middleware;
+using JogaFacil.API.Middleware;
 using JogaFacil.Application;
 using JogaFacil.Infrastructure;
 using JogaFacil.Infrastructure.Migrations;

@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using JogaFacil.Comunication.Requests.Users;
 using JogaFacil.Comunication.Responses;
 using JogaFacil.Domain.Repositories.User;
 
@@ -19,13 +18,13 @@ namespace JogaFacil.Application.UseCases.Users.GetAll
             _userReadOnlyRepository = userReadOnlyRepository;
         }
 
-        public async Task<ResponseUserJson> Execute()
+        public async Task<ResponseUsersJson> Execute()
         {
             var result = await _userReadOnlyRepository.GetAll();
 
-            return new ResponseUserJson()
+            return new ResponseUsersJson()
             {
-                Users = _mapper.Map<List<ResponseShortUserJson>>(result)
+                Users = _mapper.Map<List<ResponseUserJson>>(result)
             };
         }
     }

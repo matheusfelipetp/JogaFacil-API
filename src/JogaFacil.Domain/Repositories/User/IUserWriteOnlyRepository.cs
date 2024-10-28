@@ -3,5 +3,6 @@
     public interface IUserWriteOnlyRepository
     {
         Task Add(Entities.User user);
+        Task<bool> Delete(Guid id);
     }
 }

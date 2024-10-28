@@ -15,6 +15,7 @@ namespace JogaFacil.Application.AutoMapper
 
         private void RequestToEntity()
         {
+            CreateMap<RequestUpdateUserJson, User>();
             CreateMap<RequestRegisterUserJson, User>()
                 .ForMember(dest => dest.Password, config => config.Ignore());
         }
@@ -22,8 +23,8 @@ namespace JogaFacil.Application.AutoMapper
         private void EntityToResponse()
         {
             CreateMap<User, ResponseRegisterUserJson>();
-            CreateMap<User, ResponseShortUserJson>();
             CreateMap<User, ResponseUserJson>();
+            CreateMap<User, ResponseUsersJson>();
         }
     }
 }
